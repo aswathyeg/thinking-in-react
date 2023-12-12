@@ -1,8 +1,12 @@
 import React from 'react'
 
-const ProductCategoryRow = () => {
+const ProductCategoryRow = (props) => {
   return (
-    <div>ProductCategoryRow</div>
+    <tr>
+        <th colSpan={2}>
+            {props.category}
+        </th>
+        </tr>
   )
 }
 
