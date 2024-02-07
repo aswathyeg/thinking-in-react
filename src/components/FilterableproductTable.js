@@ -6,7 +6,7 @@ import { useState } from 'react'
 const FilterableproductTable = (props) => {
     const[filterText,setFilterText]=useState('');
     const[inStock,setInStock]=useState( false);
-
+console.log(props.products)
 
   return (
     <div>
