@@ -11,7 +11,7 @@ const ProductTable = (props) => {
             
         )
         
-    {return;//if found same text
+    {return;
     }
     if(props.inStock && !product.stocked){
         return;
