@@ -1,13 +1,12 @@
 
 import './App.css';
-
-import ListExp from './components/UpdateObject';
+import UpdateArray from './components/UpdateArray';
 
 function App() {
  
   return (
     <div className="App">
-     <ListExp/>
+     <UpdateArray/>
     </div>
   );
 }
