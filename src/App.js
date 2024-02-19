@@ -1,12 +1,12 @@
 
 import './App.css';
-import ReactingToInput from './components/ReactingToInput';
+import ReplaceArrayItems from './components/arrays/ReplaceArrayItems';
 
 function App() {
  
   return (
     <div className="App">
-     <ReactingToInput/>
+     <ReplaceArrayItems/>
     </div>
   );
 }
