@@ -10,10 +10,10 @@ const Insert = () => {
     const handleClick=()=>{
         let insertAt=1;
        let newItems=[
-        ...items.slice(0,insertAt),
+        ...items.slice(0,insertAt),//items from index 0 to 1
         {id:nextId++,
-        name:name},
-        ...items.slice(insertAt)
+        name:name},// new item 
+        ...items.slice(insertAt)// remaining items  
 
        ]
 setItems(newItems);
