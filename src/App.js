@@ -1,12 +1,12 @@
 
 import './App.css';
-import ReplaceArrayItems from './components/arrays/ReplaceArrayItems';
+import Insert from './components/arrays/Insert';
 
 function App() {
  
   return (
     <div className="App">
-     <ReplaceArrayItems/>
+     <Insert/>
     </div>
   );
 }
