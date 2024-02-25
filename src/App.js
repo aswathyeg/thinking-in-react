@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './App.css';
-import PreserveResetState from './components/PreserveResetState';
+import PreserveResetState from './components/PreserveState';
 
 function App() {
   let [styling,setStyling]=useState(false)
