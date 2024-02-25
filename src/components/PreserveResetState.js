@@ -1,3 +1,5 @@
+//Same component at the same position preserves state
+
 import React, { useState } from 'react'
 
 const PreserveResetState = ({styling}) => {
