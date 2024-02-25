@@ -1,12 +1,21 @@
-
+import React, { useState } from 'react'
 import './App.css';
-import ReactingToInput from './components/ReactingToInput';
+import PreserveResetState from './components/PreserveState';
 
 function App() {
+  let [styling,setStyling]=useState(false)
  
   return (
     <div className="App">
-     <ReactingToInput/>
+       {styling?<PreserveResetState styling={true}/>:<PreserveResetState styling={false}/>}
+ <label>
+        <input 
+        type='checkbox'
+        checked={styling}
+        onChange={(e)=>{setStyling(e.target.checked)}}/>
+        Apply Styling
+    </label>
+     
     </div>
   );
 }
