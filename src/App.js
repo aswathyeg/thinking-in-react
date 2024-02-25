@@ -1,12 +1,21 @@
-
+import React, { useState } from 'react'
 import './App.css';
-import ReverseItems from './components/arrays/ReverseItems';
+import PreserveResetState from './components/PreserveResetState';
 
 function App() {
+  let [styling,setStyling]=useState(false)
  
   return (
     <div className="App">
-     <ReverseItems/>
+       {styling?<PreserveResetState styling={true}/>:<PreserveResetState styling={false}/>}
+ <label>
+        <input 
+        type='checkbox'
+        checked={styling}
+        onChange={(e)=>{setStyling(e.target.checked)}}/>
+        Apply Styling
+    </label>
+     
     </div>
   );
 }
