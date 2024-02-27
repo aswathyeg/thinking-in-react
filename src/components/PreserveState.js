@@ -1,4 +1,5 @@
 //Same component at the same position preserves state
+//Different components at the same position reset state
 
 import React, { useState } from 'react'
 
