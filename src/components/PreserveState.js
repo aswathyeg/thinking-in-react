@@ -35,3 +35,18 @@ const PreserveResetState = ({styling}) => {
 }
 
 export default PreserveResetState
+
+// let [styling,setStyling]=useState(false)
+ 
+// return (
+//   <div className="App">
+//      {styling? <p>See you later!</p> :<PreserveResetState styling={false}/>}
+// <label>
+//       <input 
+//       type='checkbox'
+//       checked={styling}
+//       onChange={(e)=>{setStyling(e.target.checked)}}/>
+//       Take a break
+//   </label>
+   
+//   </div>
