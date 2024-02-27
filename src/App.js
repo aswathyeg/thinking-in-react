@@ -7,13 +7,13 @@ function App() {
  
   return (
     <div className="App">
-       {styling?<PreserveResetState styling={true}/>:<PreserveResetState styling={false}/>}
+       {styling? <p>See you later!</p> :<PreserveResetState styling={false}/>}
  <label>
         <input 
         type='checkbox'
         checked={styling}
         onChange={(e)=>{setStyling(e.target.checked)}}/>
-        Apply Styling
+        Take a break
     </label>
      
     </div>
