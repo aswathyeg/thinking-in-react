@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-const AddTask = ({onAddTask}) => {
+const AddTask = ({ onAddTask}) => {
+    const[text,setText]=useState('')
   return (
     <div>
         
-        <input type='text'
+        <input 
+        value={text}
+        onChange={(e)=>setText(e.target.value)}
         />
-        <button onClick={onAddTask}>Add</button>
+        <button onClick={()=>{
+             setText('');
+            onAddTask(text)}}>Add</button>
         </div>
   )
 }
