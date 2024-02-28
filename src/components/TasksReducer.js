@@ -11,12 +11,9 @@ export default function TaskReducer(tasks,action){
         ]
 
         }
-        case 'deleted':{
-            return
-                tasks.filter((items)=>items.id!==action.id)
-            
-            
-        }
+        case 'deleted': {
+            return tasks.filter((t) => t.id !== action.id);
+          }
         case 'changed':{
             return tasks.map((items)=> {
                 if(items.id===action.task.id)
